@@ -1,0 +1,65 @@
+body {
+  background-color: #212121;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-me,
+.favorite-technologies,
+.favorite-activities {
+  margin-bottom: 40px;
+}
+
+h2 {
+  color: #fff;
+}
+
+.title-section {
+  text-align: center;
+  border-radius: 30px;
+  display: block;
+  background-color: black;
+  width: 45%;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  border-color: #007bff;
+}
+
+.images {
+  display: flex;
+}
+
+img {
+  width: 100%;
+  height: 200px;
+}
