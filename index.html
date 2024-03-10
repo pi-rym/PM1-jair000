@@ -1,12 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Mi página personal</title>
   </head>
   <body>
-    <h1>Proyecto M1</h1>
-    <h3>Hello World!!</h3>
+    <div class="container">
+      <section class="about-me">
+        <div class="title-section">
+          <h2>Sobre Mí</h2>
+        </div>
+        <p>
+          Breve párrafo de presentación y explicación sobre mi interés en la
+          programación.
+        </p>
+      </section>
+
+      <section class="favorite-technologies">
+        <h2>Mis Tecnologías Favoritas</h2>
+        <div class="buttons">
+          <button class="html-button">HTML</button>
+          <button class="css-button">CSS</button>
+          <button class="javascript-button">JavaScript</button>
+        </div>
+        <div class="images">
+          <img src="./public/html.png" alt="HTML" />
+          <img src="./public/css.png" alt="CSS" />
+          <img src="./public/JavaScript-Logo.png" alt="JavaScript" />
+        </div>
+      </section>
+
+      <section class="favorite-activities">
+        <h2>Mis Actividades Favoritas</h2>
+        <form id="activity-form">
+          <input type="text" name="title" placeholder="Título" />
+          <input type="text" name="description" placeholder="Descripción" />
+          <input type="url" name="image-url" placeholder="URL de la Imagen" />
+          <button type="submit">Agregar Actividad</button>
+        </form>
+        <div id="activity-container"></div>
+      </section>
+    </div>
   </body>
 </html>
