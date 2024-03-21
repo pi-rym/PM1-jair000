@@ -1,20 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 body {
   background-color: #212121;
   color: #fff;
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  text-align: center;
+  font-family: "Poppins";
 }
 
 .container {
   max-width: 900px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 120px 20px 30px 20px;
+}
+.title {
+  background-color: #fff;
+  color: #212121;
+  width: 100%;
+  position: fixed;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+h1 {
+  font-size: 40px;
 }
 
 section {
   display: flex;
   flex-direction: column;
+}
+
+.title-section {
+  height: 60px;
+  width: 180px;
+  border-radius: 30px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
 }
 
 .about-me,
@@ -23,43 +53,200 @@ section {
   margin-bottom: 40px;
 }
 
+.about-me > p {
+  font-size: 20px;
+}
+
 h2 {
   color: #fff;
+  letter-spacing: 0.1em;
 }
 
-.title-section {
-  text-align: center;
-  border-radius: 30px;
-  display: block;
-  background-color: black;
-  width: 45%;
-}
-
-.buttons {
+.content-technologies {
   display: flex;
   flex-direction: column;
 }
 
+.content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#content-reverse {
+  flex-direction: row-reverse;
+}
+
 button {
-  margin-bottom: 10px;
-  padding: 10px 20px;
   border: 2px solid transparent;
-  border-radius: 5px;
-  background-color: #007bff;
+  border-radius: 8px;
   color: #fff;
   font-size: 16px;
   cursor: pointer;
 }
 
-button:hover {
-  border-color: #007bff;
+.content > button {
+  width: 50%;
+  height: 80px;
 }
 
-.images {
-  display: flex;
+.content > button:hover {
+  background-color: #fff;
+}
+
+.html-button {
+  background-color: #e74b28;
+}
+
+.html-button:hover {
+  font-weight: bold;
+  color: #e74b28;
+  border-color: #e74b28;
+}
+
+.css-button {
+  background-color: #284ee3;
+}
+
+.css-button:hover {
+  font-weight: bold;
+  color: #284ee3;
+  border-color: #284ee3;
+}
+
+.javascript-button {
+  background-color: #e4a126;
+}
+
+.javascript-button:hover {
+  font-weight: bold;
+  color: #e4a126;
+  border-color: #e4a126;
 }
 
 img {
-  width: 100%;
+  width: 120px;
+  height: 150px;
+}
+
+.img-container {
+  border-radius: 15%;
+  text-align: center;
+  margin: 30px;
+  width: 180px;
   height: 200px;
+  padding: 20px;
+  background-color: white;
+  margin-bottom: 30px;
+}
+
+#html-img {
+  border: solid #e74b28 4px;
+}
+
+#css-img {
+  border: solid #284ee3 4px;
+}
+
+#js-img {
+  border: solid #e4a126 4px;
+}
+
+form {
+  inset: 4px;
+  background: #1c1c1c;
+  padding: 50px 40px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form .container-input {
+  position: relative;
+  width: 300px;
+  margin-top: 35px;
+}
+
+form .container-input input {
+  position: relative;
+  width: 100%;
+  padding: 20px 10px 10px;
+  background: transparent;
+  outline: none;
+  border: none;
+  box-shadow: none;
+  color: #23242a;
+  font-size: 1em;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+}
+
+form .container-input span {
+  position: absolute;
+  left: 0;
+  padding: 20px 10px 10px;
+  pointer-events: none;
+  color: #8f8f8f;
+  font-size: 1em;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+}
+
+form .container-input input:valid ~ span,
+form .container-input input:focus ~ span {
+  color: #fff;
+  font-size: 0.75em;
+  transform: translateY(-34px);
+}
+
+form .container-input i {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  border-radius: 4px;
+  overflow: hidden;
+  transition: 0.5s;
+  pointer-events: none;
+}
+
+form .container-input input:valid ~ i,
+form .container-input input:focus ~ i {
+  height: 44px;
+}
+
+#activity-form > button {
+  padding: 9px 25px;
+  width: 200px;
+  background-color: #373544;
+  font-size: 0.9em;
+  font-weight: 600;
+  margin-top: 15px;
+}
+
+#activity-form > button:active {
+  opacity: 0.8;
+}
+
+#activity-container {
+  background-color: #4d4d4d;
+  border-radius: 8px;
+  width: 100%;
+  height: auto;
+  margin-top: 50px;
+  padding: 20px 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #212121;
+  width: 120px;
+  text-align: center;
+  margin: 0 10px 10px 10px;
+  border-radius: 8px;
 }
