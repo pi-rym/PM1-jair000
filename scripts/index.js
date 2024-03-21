@@ -86,7 +86,7 @@ const EventHandler = (e) => {
   if (!titleValue || !descriptionValue || !imgValue) {
     return alert("Por favor rellenar los campos.");
   }
-  const id = Date.now().toString();
+  const id = Date.now().toString(); //? Crea un ID único
   repository.createActivity(id, titleValue, descriptionValue, imgValue);
   ActivitiesConverted();
   form.reset();
@@ -94,41 +94,5 @@ const EventHandler = (e) => {
 
 const btnSubmit = document.getElementById("submit");
 btnSubmit.addEventListener("click", EventHandler);
-// TODO: Resolución de CHATGPT
 
-// class Activity {
-//   constructor(id, title, description, imgUrl) {
-//     this.id = id;
-//     this.title = title;
-//     this.description = description;
-//     this.imgUrl = imgUrl;
-//   }
-// }
-// class Repository {
-//   constructor() {
-//     this.activities = new Map();
-//   }
-
-//   static generateUniqueId() {
-//     return Date.now().toString(36) + Math.random().toString(36).substring(2);
-//   }
-
-//   getAllActivities() {
-//     return Array.from(this.activities.values());
-//   }
-
-//   createActivity(title, description, imgUrl) {
-//     const id = Repository.generateUniqueId();
-//     const activity = new Activity(id, title, description, imgUrl);
-//     this.activities.set(id, activity);
-//     return id; // Devuelve el ID generado para la actividad creada
-//   }
-
-//   deleteActivity(id) {
-//     this.activities.delete(id);
-//   }
-
-//   getActivityById(id) {
-//     return this.activities.get(id);
-//   }
-// }
+module.exports = { Activity, Repository };
