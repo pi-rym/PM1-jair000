@@ -5,43 +5,126 @@
     <link rel="stylesheet" href="./styles/reset.css" />
     <link rel="stylesheet" href="./styles/styles.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mi página personal</title>
+    <title>Proyecto M1</title>
   </head>
   <body>
+    <div class="title">
+      <h1>Proyecto M1</h1>
+    </div>
     <div class="container">
       <section class="about-me">
         <div class="title-section">
           <h2>Sobre Mí</h2>
         </div>
         <p>
-          Breve párrafo de presentación y explicación sobre mi interés en la
-          programación.
+          <em
+            ><b
+              >Passionné par le développement frontend, Je suis du Pérou ⛳</b
+            ></em
+          >
+          <br />
+          Student in Soy Henry - Development Full Stack
         </p>
+        <ul>
+          <li>🌱 Actualmente estoy aprendiendo JavaScript, React y SQL</li>
+          <li>
+            👨‍💻 Todos mis proyectos están disponibles en
+            <a href="https://github.com/jair000">https://github.com/jair000</a>
+          </li>
+          <li>💬 Pregúntame sobre JavaScript y juegos 🎲</li>
+          <li>
+            📫 Cómo contactarme:
+            <a href="mailto:jairoo.andrea1204@gmail.com"
+              >jairoo.andrea1204@gmail.com</a
+            >
+          </li>
+        </ul>
       </section>
 
       <section class="favorite-technologies">
         <h2>Mis Tecnologías Favoritas</h2>
-        <div class="buttons">
-          <button class="html-button">HTML</button>
-          <button class="css-button">CSS</button>
-          <button class="javascript-button">JavaScript</button>
-        </div>
-        <div class="images">
-          <img src="./public/html.png" alt="HTML" />
-          <img src="./public/css.png" alt="CSS" />
-          <img src="./public/JavaScript-Logo.png" alt="JavaScript" />
+        <div class="content-technologies">
+          <div class="content">
+            <button class="html-button">HTML</button>
+            <div class="img-container" id="html-img">
+              <img src="./public/html.png" alt="HTML" />
+            </div>
+          </div>
+          <div class="content" id="content-reverse">
+            <button class="css-button">CSS</button>
+            <div class="img-container" id="css-img">
+              <img src="./public/css.png" alt="CSS" />
+            </div>
+          </div>
+          <div class="content">
+            <button class="javascript-button">JavaScript</button>
+            <div class="img-container" id="js-img">
+              <img src="./public/JavaScript-Logo.png" alt="JavaScript" />
+            </div>
+          </div>
         </div>
       </section>
 
       <section class="favorite-activities">
-        <h2>Mis Actividades Favoritas</h2>
         <form id="activity-form">
-          <input type="text" name="title" placeholder="Título" />
-          <input type="text" name="description" placeholder="Descripción" />
-          <input type="url" name="image-url" placeholder="URL de la Imagen" />
+          <h2>Mis Actividades Favoritas</h2>
+          <div class="container-input">
+            <input type="text" name="title" required />
+            <span>Título</span> <i></i>
+          </div>
+          <div class="container-input">
+            <input type="text" name="description" required />
+            <span>Descripción</span> <i></i>
+          </div>
+          <div class="container-input">
+            <input type="url" name="image-url" required />
+            <span>URL Imagen</span> <i></i>
+          </div>
+
           <button type="submit">Agregar Actividad</button>
         </form>
-        <div id="activity-container"></div>
+        <div id="activity-container">
+          <div class="card">
+            <img src="" alt="" />
+            <h3>Comer</h3>
+            <p>Descripción</p>
+          </div>
+          <div class="card">
+            <img src="" alt="" />
+            <h3>Comer</h3>
+            <p>Descripción</p>
+          </div>
+          <div class="card">
+            <img src="" alt="" />
+            <h3>Comer</h3>
+            <p>Descripción</p>
+          </div>
+          <div class="card">
+            <img src="" alt="" />
+            <h3>Comer</h3>
+            <p>Descripción</p>
+          </div>
+          <div class="card">
+            <img src="" alt="" />
+            <h3>Comer</h3>
+            <p>Descripción</p>
+          </div>
+          <div class="card">
+            <img src="" alt="" />
+            <h3>Comer</h3>
+            <p>Descripción</p>
+          </div>
+          <div class="card">
+            <img src="" alt="" />
+            <h3>Comer</h3>
+            <p>Descripción</p>
+          </div>
+          <div class="card">
+            <img src="" alt="" />
+            <h3>Comer</h3>
+            <p>Descripción</p>
+          </div>
+        </div>
       </section>
     </div>
   </body>
