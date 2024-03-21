@@ -181,6 +181,7 @@ form .container-input input {
   font-size: 1em;
   letter-spacing: 0.05em;
   transition: 0.5s;
+  z-index: 1;
 }
 
 form .container-input span {
@@ -241,12 +242,30 @@ form .container-input input:focus ~ i {
   padding: 20px 10px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
 }
 
 .card {
   background-color: #212121;
-  width: 120px;
+  width: 200px;
   text-align: center;
-  margin: 0 10px 10px 10px;
   border-radius: 8px;
+}
+
+.card > p {
+  padding: 10px;
+  font-size: 12px;
+}
+
+.card > img {
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+}
+
+.btnDel {
+  background-color: rgb(180, 51, 47);
+  position: absolute;
+  width: 30px;
+  height: 30px;
 }
